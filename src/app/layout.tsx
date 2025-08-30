@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Body from "./Body";
 
 export const metadata: Metadata = {
   title: "Warikan",
@@ -12,7 +13,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+        <Body>{children}</Body>
+      </body>
     </html>
   );
 };
